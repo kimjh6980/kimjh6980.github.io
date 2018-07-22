@@ -2865,23 +2865,64 @@ input, select, textarea {
 			.statistics li.style1 {
 				background-color: #ffafb0;
 			}
-
 			.statistics li.style2 {
 				background-color: #ffafd8;
 			}
-
 			.statistics li.style3 {
 				background-color: #eeb7b4;
 			}
-
 			.statistics li.style4 {
 				background-color: #f2cfa5;
 			}
-
 			.statistics li.style5 {
+				background-color: #fcffb0;
+			}
+ /*#b5c7ed*/
+            .statistics li.style6 {
 				background-color: #aee4ff;
 			}
-//ffafb0 ffafd8, eeb7b4, f2cfa5, fcffb0 aee4ff, b5c7ed, c4f4fe, bee9b4, fdfa87, fcc6f7, caa6fe, ffafd8, afffba, e2ffbaf, fcffb0, f2cfa5, ffe4af, dfd4e4
+            .statistics li.style7 {
+				background-color: #b5c7ed;
+			}
+            .statistics li.style8 {
+				background-color: #c4f4fe;
+			}
+            .statistics li.style9 {
+				background-color: #bee9b4;
+			}
+            .statistics li.style10 {
+				background-color: #fdfa87;
+			}
+            .statistics li.style11 {
+				background-color: #fcc6f7;
+			}
+            .statistics li.style12 {
+				background-color: #caa6fe;
+			}
+            .statistics li.style13 {
+				background-color: #ffafd8;
+			}
+            .statistics li.style14 {
+				background-color: #afffba;
+			}
+            .statistics li.style15 {
+				background-color: #e2ffba;
+			}
+            .statistics li.style16 {
+				background-color: #fcffb0;
+			}
+            .statistics li.style17 {
+				background-color: #f2cfa5;
+			}
+            .statistics li.style18 {
+				background-color: #ffe4af;
+			}
+            .statistics li.style19 {
+				background-color: #dfd4e4;
+			}
+
+            
+//ffafb0 ffafd8, eeb7b4, f2cfa5, fcffb0 - aee4ff, b5c7ed, c4f4fe, bee9b4, fdfa87, fcc6f7, caa6fe, ffafd8, afffba, e2ffbaf, fcffb0, f2cfa5, ffe4af, dfd4e4
 			.statistics li strong, .statistics li b {
 				display: block;
 				font-size: 2em;
