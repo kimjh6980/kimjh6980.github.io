@@ -47,4 +47,7 @@
     $('.navbar').removeClass('d-none');
   })
 
+  $('h2').mouseover(function() {
+    $("h2").css("background-color", "yellow");
+  })
 })(jQuery); // End of use strict
