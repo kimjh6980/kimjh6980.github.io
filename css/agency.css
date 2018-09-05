@@ -693,26 +693,3 @@ ul.social-buttons li a {
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   background-color: #fed136;
 }
-
-
-.work .controls {
-  padding: 2%;
-  text-align: center;
-}
-
-.work button {
-  display: inline-block;
-  margin: 10px 0;
-  padding: .4em .8em;
-  background: #fff;
-  border: 2px solid #333;
-  font-size: 16px;
-  font-family: 'Nanum gothic', arial, sans-serif;
-  border-radius: 4px;
-  cursor: pointer;
-  text-transform: capitalize;
-}
-
-.work button:focus {
-  outline: 0 none;
-}

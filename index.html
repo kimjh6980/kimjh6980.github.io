@@ -23,6 +23,9 @@
     <!-- Custom styles for this template -->
     <link href="css/agency.min.css" rel="stylesheet">
 
+    <!-- Custom styles for this template -->
+    <link href="scss/ExternalEffect.scss" rel="stylesheet">
+
     <!-- Devicon -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
@@ -208,7 +211,19 @@
       </div>
     </section>
 
-
+    <script>
+      function worktab(num)  {
+        for(i=0; i<4;i++) {
+          var idname = "Work"+num
+          if(!($("#Work"+i).hasClass("btn-primary"))) {
+            $("#Work"+i).addClass("btn-primary");
+          }
+        }
+        $("#Work"+num).removeClass("btn-primary");
+        $('.act0').hide();
+        $('.act'+num).show();
+      }
+    </script>
 
     <!-- Portfolio Grid -->
     <section class="bg-light" id="WORK">
@@ -219,14 +234,38 @@
             <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
           </div>
         </div>
-
-        <div class="controls">
-           <button class="filter ts" data-filter="all">All</button>
-           <button class="filter ts" data-filter=".category-1">web design</button>
-           <button class="filter ts" data-filter=".category-2">editeriol</button>
-           <button class="filter ts" data-filter=".category-3">artwork</button>
-           <button class="filter ts" data-filter=".category-4">typography</button>
+        <div class="controls text-center">
+           <button id="Work0" class="btn activity" data-filter="all" style="color:black;width:20%;padding:7px" onmousedown=worktab(0);>All</button>
+           <!--<button id="Work1" class="btn btn-primary" data-filter="category-1" style="color:black;width:20%;padding:7px" onmousedown="$('.act0').hide(), $('.act1').show()">Android</button>-->
+           <button id="Work1" class="btn btn-primary" data-filter="category-1" style="color:black;width:20%;padding:7px" onmousedown=worktab(1)>Android</button>
+           <button id="Work2" class="btn btn-primary" data-filter="category-2" style="color:black;width:20%;padding:7px" onmousedown=worktab(2)>VR/AR</button>
+           <button id="Work3" class="btn btn-primary" data-filter="category-3" style="color:black;width:20%;padding:7px" onmousedown=worktab(3)>Others</button>
          </div>
+
+        <div class="container">
+          <br>
+          <div class = "row">
+            <div class="col-md-4 col-sm-6 portfolio-item act0 act1">
+              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+              </a>
+              <div class="portfolio-caption">
+                <h4>Threads</h4>
+                <p class="text-muted">Illustration</p>
+              </div>
+            </div>
+            <div class="act0 act2">b2</div>
+            <div class="act0 act3">c3</div>
+            <div class="act0 act1">d1</div>
+            <div class="act0 act3">e3</div>
+            <div class="act0 act2">f2</div>
+          </div>
+       </div>
         <!--
         <div class="row">
           <div class="col-md-4 col-sm-6 portfolio-item">
