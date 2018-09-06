@@ -23,16 +23,15 @@
   <!-- Custom styles for this template -->
   <link href="css/agency.min.css" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
-  <link href="scss/ExternalEffect.scss" rel="stylesheet">
-
   <!-- Devicon -->
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
+  <!-- ImageSlide css/js-->
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+
 </head>
-
-<body id="page-top">
-
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
@@ -54,9 +53,6 @@
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#WORK">WORK</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#SKILL">Contact</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -116,7 +112,7 @@
             &raquo 초등교원 Python 연수
             <br>&raquo 중학교 자유학기
             <br>&raquo 찾아가는 고등학교 SW특강
-            <br>&raquo 경력단절여성 SW교육
+            <br>&raquo SW여성인재양성 SW교육강사 양성과정 강사 및 조교
             <br>&raquo 조선대학교 과학문화사업단 MOS교육
            </div>
             <div class="col-md-6">
@@ -146,7 +142,7 @@
             <br>&raquo (2016.06.20 ~ 2016.07.25) 스마트미디어인재개발원 청년취업아카데미 디지털휴머니즘아카데미 IOT특화과정 수료
             <br>&raquo (2016.05.19) 한국방송통신전파진흥원 국가기술자격 통신선로기능사 취득
             <br>&raquo (2017.10.27) (주)코딩앤플레이 코딩교육지도사2급 취득
-            <br>&rqauo (2018.09.02) YBMIT Coding Specialist 2급 취득
+            <br>&raquo (2018.09.02) YBMIT Coding Specialist 2급 취득
 
             <h2 class="service-heading text-left">PAPER</h2>
             <hr color=black width=100%>
@@ -170,6 +166,7 @@
             <br>&raquo 2018 한국콘텐츠학회 춘계종합학술대회 - 캠퍼스 AR안내시스템 See-Chosun 설계 및 구현
             <br>&raquo 2018 한국콘텐츠학회 춘계종합학술대회 - 중소의료기관에서 활용 가능한 IoT플랫폼
             <br>&raquo 2018 Korea Institute of Smart Media - Implementation of Attendance Management System using Virtual Beacon of Smartphone
+            <!-- 이번꺼 -->
          </div>
           </div>
   </section>
@@ -184,7 +181,7 @@
         </div>
       </div>
 
-      <div class="row col-lg-11 mx-auto center">
+      <div class="row col-lg-15 mx-auto center">
         <!-- col-lg-갯수-->
         <i class="devicon-c-plain" style="font-size:5em; padding:10px" id="myDIV1" onmouseover="Skill_MouseOver(1)" onmouseout="Skill_MouseOut(1)"></i>
         <i class="devicon-cplusplus-plain" style="font-size:5em; padding:10px" id="myDIV2" onmouseover="Skill_MouseOver(2)" onmouseout="Skill_MouseOut(2)"></i>
@@ -236,11 +233,11 @@
         </div>
       </div>
       <div class="controls text-center">
-        <button id="Work0" class="btn activity" data-filter="all" style="color:black;width:20%;padding:7px" onmouseover=worktab(0);>All</button>
+        <button id="Work0" class="btn activity" data-filter="all" style="color:black;width:20%;padding:7px" onmousedown=worktab(0);>All</button>
         <!--<button id="Work1" class="btn btn-primary" data-filter="category-1" style="color:black;width:20%;padding:7px" onmousedown="$('.act0').hide(), $('.act1').show()">Android</button>-->
-        <button id="Work1" class="btn btn-primary" data-filter="category-1" style="color:black;width:20%;padding:7px" onmouseover=worktab(1)>Android</button>
-        <button id="Work2" class="btn btn-primary" data-filter="category-2" style="color:black;width:20%;padding:7px" onmouseover=worktab(2)>VR/AR</button>
-        <button id="Work3" class="btn btn-primary" data-filter="category-3" style="color:black;width:20%;padding:7px" onmouseover=worktab(3)>Others</button>
+        <button id="Work1" class="btn btn-primary" data-filter="category-1" style="color:black;width:20%;padding:7px" onmousedown=worktab(1)>Android</button>
+        <button id="Work2" class="btn btn-primary" data-filter="category-2" style="color:black;width:20%;padding:7px" onmousedown=worktab(2)>VR/AR</button>
+        <button id="Work3" class="btn btn-primary" data-filter="category-3" style="color:black;width:20%;padding:7px" onmousedown=worktab(3)>Others</button>
       </div>
       <!-- work style -->
       <style>
@@ -383,14 +380,16 @@
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3"></a>
           </figure>
         </div>
+        <!--
         <p class="text-right">
-          <a  style="font-size:30px" href="#">Privacy Policy -></a>
+          <a  style="font-size:30px" href="#">Privacy Policy <i class="ion-ios-arrow-right"></i></a>
         </p>
+      -->
       </div>
     </div>
   </section>
 
-  <!-- YearTree
+  <!-- TechTree
   <section id="WORK">
     <div class="container">
       <div class="row">
@@ -530,6 +529,31 @@
   </footer>
 
   <!-- Portfolio Modals -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  	<script type="text/javascript" src="slick/slick.min.js"></script>
+
+  	<script type="text/javascript">
+  		$(document).ready(function() {
+  			$('.slider-for').slick({
+  				slidesToShow: 1,
+  				slidesToScroll: 1,
+  				arrows: true,
+  				fade: true,
+          infinite:false,
+  				asNavFor: '.slider-nav'
+  			});
+  			$('.slider-nav').slick({
+          infinite:false,
+  				slidesToShow: 4,
+  				slidesToScroll: 1,
+  				asNavFor: '.slider-for',
+  				dots: true,
+  				centerMode: true,
+  				focusOnSelect: true
+  			});
+  		});
+  	</script>
 
   <!-- Modal 1 -->
   <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
@@ -547,9 +571,24 @@
                 <!-- Project Details Go Here -->
                 <h2 class="text-uppercase">Project Name</h2>
                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
+                <div class="slider-for">
+                  <img src="/img/portfolio/Android/RuntoYou/fix_0001.png"/>
+                  <img src="/img/portfolio/Android/RuntoYou/fix_0003.png"/>
+                  <img src="/img/portfolio/Android/RuntoYou/fix_0004.png"/>
+                  <img src="/img/portfolio/Android/RuntoYou/fix_0005.png"/>
+                  <img src="/img/portfolio/Android/RuntoYou/fix_0006.png"/>
+                </div>
+                <div class="slider-nav">
+                  <img src="/img/portfolio/Android/RuntoYou/fix_0001.png"/>
+                  <img src="/img/portfolio/Android/RuntoYou/fix_0003.png"/>
+                  <img src="/img/portfolio/Android/RuntoYou/fix_0004.png"/>
+                  <img src="/img/portfolio/Android/RuntoYou/fix_0005.png"/>
+                  <img src="/img/portfolio/Android/RuntoYou/fix_0006.png"/>
+                </div>
                 <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate,
                   maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+
+
                 <ul class="list-inline">
                   <li>Date: January 2017</li>
                   <li>Client: Threads</li>
@@ -754,6 +793,9 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/agency.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
 
 </body>
 
