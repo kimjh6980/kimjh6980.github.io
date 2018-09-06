@@ -554,6 +554,17 @@
   			});
   		});
   	</script>
+    <script type="text/javascript">
+       $(function(){
+           $('img.gocoder').lazyload({        // 이미지를 동적으로 호출 하도록
+               placeholder : 'loading.gif',    // 로딩 이미지
+               threshold: 0,                 // 접근 ~px 이전에 로딩을 시도한다.
+               load : function(){              // 로딩시에 이벤트
+                   $(this).attr('alt',$(this).attr("data-original"));
+               }
+           });
+       });
+   </script>
 
   <!-- Modal 1 -->
   <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
@@ -572,18 +583,18 @@
                 <h2 class="text-uppercase">Project Name</h2>
                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                 <div class="slider-for">
-                  <img src="/img/portfolio/Android/RuntoYou/fix_0001.png"/>
-                  <img src="/img/portfolio/Android/RuntoYou/fix_0003.png"/>
-                  <img src="/img/portfolio/Android/RuntoYou/fix_0004.png"/>
-                  <img src="/img/portfolio/Android/RuntoYou/fix_0005.png"/>
-                  <img src="/img/portfolio/Android/RuntoYou/fix_0006.png"/>
+                  <img src="img/portfolio/Android/RuntoYou/fix_0001.png"/>
+                  <img src="img/portfolio/Android/RuntoYou/fix_0003.png"/>
+                  <img src="img/portfolio/Android/RuntoYou/fix_0004.png"/>
+                  <img src="img/portfolio/Android/RuntoYou/fix_0005.png"/>
+                  <img src="img/portfolio/Android/RuntoYou/fix_0006.png"/>
                 </div>
                 <div class="slider-nav">
-                  <img src="/img/portfolio/Android/RuntoYou/fix_0001.png"/>
-                  <img src="/img/portfolio/Android/RuntoYou/fix_0003.png"/>
-                  <img src="/img/portfolio/Android/RuntoYou/fix_0004.png"/>
-                  <img src="/img/portfolio/Android/RuntoYou/fix_0005.png"/>
-                  <img src="/img/portfolio/Android/RuntoYou/fix_0006.png"/>
+                  <img src="img/portfolio/Android/RuntoYou/fix_0001.png"/>
+                  <img src="img/portfolio/Android/RuntoYou/fix_0003.png"/>
+                  <img src="img/portfolio/Android/RuntoYou/fix_0004.png"/>
+                  <img src="img/portfolio/Android/RuntoYou/fix_0005.png"/>
+                  <img src="img/portfolio/Android/RuntoYou/fix_0006.png"/>
                 </div>
                 <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate,
                   maiores repudiandae, nostrum, reiciendis facere nemo!</p>
