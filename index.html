@@ -385,8 +385,8 @@
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2"></a>
         </figure>
 
-        <figure class="workeffect act0 act2">
-          <img src="img/portfolio/android/T_mydoctorA.jpg"/>
+        <figure class="workeffect act0 act1">
+          <img src="img/portfolio/android/T_beaconattend.jpg"/>
           <figcaption>
             <h3>MyDoctorA</h3>
             <p>UCSD Qualcomm Institute HealthCare IoT Project</p><i class="ion-ios-arrow-right"></i>
@@ -403,63 +403,49 @@
         </p>
       -->
 </section>
-
-<!-- Modal 1 -->
-<div class="portfolio-modal modal hidden" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content ">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl"></div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <div class="modal-body">
-              <!-- Project Details Go Here -->
-              <h2 class="text-uppercase">Project Name</h2>
-              <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-              <div class="container">
-                <div class="slick-fade slider-for">
-                  <img src="img/portfolio/android/run/0001.jpg"/>
-                  <img src="img/portfolio/android/run/0003.jpg"/>
-                  <img src="img/portfolio/android/run/0004.jpg"/>
-                  <img src="img/portfolio/android/run/0005.jpg"/>
-                  <img src="img/portfolio/android/run/0006.jpg"/>
-                  <img src="img/portfolio/android/run/0007.jpg"/>
-                  <img src="img/portfolio/android/run/0008.jpg"/>
-                  <img src="img/portfolio/android/run/0009.jpg"/>
-                  <img src="img/portfolio/android/run/0010.jpg"/>
-                  <img src="img/portfolio/android/run/0013.jpg"/>
-                  <img src="img/portfolio/android/run/0014.jpg"/>
-                  <img src="img/portfolio/android/run/0015.jpg"/>
-                </div>
-                  <div class="slick-fade slider-nav">
-                    <img src="img/portfolio/android/run/0001.jpg"/>
-                    <img src="img/portfolio/android/run/0003.jpg"/>
-                    <img src="img/portfolio/android/run/0004.jpg"/>
-                    <img src="img/portfolio/android/run/0005.jpg"/>
-                    <img src="img/portfolio/android/run/0006.jpg"/>
-                    <img src="img/portfolio/android/run/0007.jpg"/>
-                    <img src="img/portfolio/android/run/0008.jpg"/>
-                    <img src="img/portfolio/android/run/0009.jpg"/>
-                    <img src="img/portfolio/android/run/0010.jpg"/>
-                    <img src="img/portfolio/android/run/0013.jpg"/>
-                    <img src="img/portfolio/android/run/0014.jpg"/>
-                    <img src="img/portfolio/android/run/0015.jpg"/>
-                </div>
+    <!-- Modal 1 -->
+    <div class="portfolio-modal modal" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content ">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Project Name</h2>
+                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <div class="container">
+                    <button onmousedown="$('.slider-for').slick('setPosition'), $('.slider-nav').slick('setPosition')">showimage</button>
+                    <div class="slick-active slider-for">
+                      <img class="slick-current slick-center" src="img/portfolio/android/run/0001.jpg"/>
+                      <img src="img/portfolio/android/run/0001.jpg"/>
+                      <img src="img/portfolio/android/run/0001.jpg"/>
+                      <img src="img/portfolio/android/run/0001.jpg"/>
+                      <img src="img/portfolio/android/run/0001.jpg"/>
+                    </div>
+                    <div class="slick-active slider-nav">
+                      <img class="slick-current slick-center" src="img/portfolio/android/run/0001.jpg"/>
+                      <img src="img/portfolio/android/run/0001.jpg"/>
+                      <img src="img/portfolio/android/run/0001.jpg"/>
+                      <img src="img/portfolio/android/run/0001.jpg"/>
+                      <img src="img/portfolio/android/run/0001.jpg"/>
+                    </div>
                   </div>
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate,
-                    maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
+                    cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                   <ul class="list-inline">
                     <li>Date: January 2017</li>
                     <li>Client: Threads</li>
                     <li>Category: Illustration</li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fas fa-times"></i>
-                    Close Project</button>
+    				            <i class="fas fa-times"></i>
+    				            Close Project</button>
                 </div>
               </div>
             </div>
@@ -486,76 +472,72 @@
                   <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                   <div class="container">
                     <div class="slick-fade slider-for">
-                      <img src="img/portfolio/android/mydoctora/mydoctora1.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora3.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora4.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora5.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora6.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora7.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora8.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora9.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora10.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora11.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora12.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora13.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora14.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora15.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora16.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora17.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora18.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora19.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora21.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora22.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora23.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora24.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora26.jpg"/>
+                      <img src="img/portfolio/android/run/0001.jpg"/>
                     </div>
-                      <div class="slick-fade slider-nav">
-                        <img src="img/portfolio/android/mydoctora/mydoctora1.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora3.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora4.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora5.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora6.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora7.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora8.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora9.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora10.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora11.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora12.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora13.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora14.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora15.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora16.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora17.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora18.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora19.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora21.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora22.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora23.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora24.jpg"/>
-                            <img src="img/portfolio/android/mydoctora/mydoctora26.jpg"/>
-                    </div>
-                      </div>
-                      <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
-                        cupiditate,
-                        maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                      <ul class="list-inline">
-                        <li>Date: January 2017</li>
-                        <li>Client: Threads</li>
-                        <li>Category: Illustration</li>
-                      </ul>
-                      <button class="btn btn-primary" data-dismiss="modal" type="button">
-                        <i class="fas fa-times"></i>
-                        Close Project</button>
+                    <div class="slick-fade slider-nav">
+                        <img src="img/portfolio/android/run/0001.jpg"/>
                     </div>
                   </div>
+                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
+                    cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <ul class="list-inline">
+                    <li>Date: January 2017</li>
+                    <li>Client: Threads</li>
+                    <li>Category: Illustration</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                        <i class="fas fa-times"></i>
+                        Close Project</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
 
-        <!-- TechTree
+    <!-- Modal 1 -->
+    <div class="portfolio-modal modal hidden" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content ">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Project Name</h2>
+                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <div class="container">
+                    <div class="slick-fade slider-for">
+                      <img src="img/portfolio/android/run/0001.jpg"/>
+                    </div>
+                    <div class="slick-fade slider-nav">
+                        <img src="img/portfolio/android/run/0001.jpg"/>
+                    </div>
+                  </div>
+                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
+                    cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <ul class="list-inline">
+                    <li>Date: January 2017</li>
+                    <li>Client: Threads</li>
+                    <li>Category: Illustration</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                        <i class="fas fa-times"></i>
+                        Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- TechTree
   <section id="WORK">
     <div class="container">
       <div class="row">
@@ -699,21 +681,21 @@
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script type="text/javascript" src="slick/slick.min.js"></script>
 
-
-
-
-
         <script type="text/javascript">
           $(document).ready(function() {
             $('.slider-for').slick({
+              rows: 0,
+              lazyLoad: 'ondemand',
               slidesToShow: 1,
               slidesToScroll: 1,
               arrows: true,
               fade: false,
               infinite: false,
-              asNavFor: '.slider-nav'
+              asNavFor: '.slider-nav',
+              centerMode: true,
             });
             $('.slider-nav').slick({
+              lazyLoad: 'ondemand',
               infinite: false,
               slidesToShow: 4,
               slidesToScroll: 1,
@@ -721,19 +703,22 @@
               asNavFor: '.slider-for',
               dots: true,
               centerMode: true,
-              focusOnSelect: true
+              focusOnSelect: true,
             });
+            $('.slider-for').slick('setPosition').slick();
+            $('.slider-nav').slick('setPosition').slick();
+            /*
             $('.slick-fade').slick({
               dots: true,
               infinite: true,
               speed: 500,
               fade: false,
-              cssEase: 'linear'
+              cssEase: 'linear',
+              initalSlide:1
             });
+            */
           });
         </script>
-
-
 
         <!-- Bootstrap core JavaScript -->
         <script src="vendor/jquery/jquery.min.js"></script>
