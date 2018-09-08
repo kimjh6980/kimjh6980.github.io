@@ -36,6 +36,125 @@
 
 
 </head>
+<!-- work style -->
+<style>
+img.bigimg {
+  padding:2px;
+  border:5px solid black;
+}
+  @import url(https://fonts.googleapis.com/css?family=Raleway:300,700);
+  @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+  figure.workeffect {
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 230px;
+    max-width: 315px;
+    width: 100%;
+    color: #ffffff;
+    text-align: left;
+    font-size: 16px;
+    background-color: #000000;
+  }
+  figure.workeffect * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  figure.workeffect img {
+    max-width: 100%;
+    backface-visibility: hidden;
+    vertical-align: top;
+  }
+  figure.workeffect:after,
+  figure.workeffect figcaption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  figure.workeffect:after {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.65);
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    opacity: 0;
+  }
+  figure.workeffect figcaption {
+    z-index: 1;
+    padding: 40px;
+  }
+  figure.workeffect h3,
+  figure.workeffect .links {
+    width: 100%;
+    margin: 5px 0;
+    padding: 0;
+  }
+  figure.workeffect h3 {
+    line-height: 1.1em;
+    font-weight: 700;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    opacity: 0;
+  }
+  figure.workeffect p {
+    font-size: 0.8em;
+    font-weight: 300;
+    letter-spacing: 1px;
+    opacity: 0;
+    top: 50%;
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
+  }
+  figure.workeffect i {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 20px 25px;
+    font-size: 34px;
+    opacity: 0;
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+  figure.workeffect a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  figure.workeffect:hover img,
+  figure.workeffect.hover img {
+    zoom: 1;
+    filter: alpha(opacity=50);
+    -webkit-opacity: 0.5;
+    opacity: 0.5;
+  }
+  figure.workeffect:hover:after,
+  figure.workeffect.hover:after {
+    opacity: 1;
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+  }
+  figure.workeffect:hover h3,
+  figure.workeffect.hover h3,
+  figure.workeffect:hover p,
+  figure.workeffect.hover p,
+  figure.workeffect:hover i,
+  figure.workeffect.hover i {
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+  </style>
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -248,121 +367,6 @@
       <button id="Work2" class="btn btn-primary" data-filter="category-2" style="color:black;width:20%;padding:7px" onmousedown=worktab(2)>VR/AR</button>
       <button id="Work3" class="btn btn-primary" data-filter="category-3" style="color:black;width:20%;padding:7px" onmousedown=worktab(3)>Others</button>
     </div>
-    <!-- work style -->
-    <style>
-      @import url(https://fonts.googleapis.com/css?family=Raleway:300,700);
-      @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
-      figure.workeffect {
-        font-family: 'Raleway', Arial, sans-serif;
-        position: relative;
-        float: left;
-        overflow: hidden;
-        margin: 10px 1%;
-        min-width: 230px;
-        max-width: 315px;
-        width: 100%;
-        color: #ffffff;
-        text-align: left;
-        font-size: 16px;
-        background-color: #000000;
-      }
-      figure.workeffect * {
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        -webkit-transition: all 0.35s ease;
-        transition: all 0.35s ease;
-      }
-      figure.workeffect img {
-        max-width: 100%;
-        backface-visibility: hidden;
-        vertical-align: top;
-      }
-      figure.workeffect:after,
-      figure.workeffect figcaption {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-      }
-      figure.workeffect:after {
-        content: '';
-        background-color: rgba(0, 0, 0, 0.65);
-        -webkit-transition: all 0.35s ease;
-        transition: all 0.35s ease;
-        opacity: 0;
-      }
-      figure.workeffect figcaption {
-        z-index: 1;
-        padding: 40px;
-      }
-      figure.workeffect h3,
-      figure.workeffect .links {
-        width: 100%;
-        margin: 5px 0;
-        padding: 0;
-      }
-      figure.workeffect h3 {
-        line-height: 1.1em;
-        font-weight: 700;
-        font-size: 1.4em;
-        text-transform: uppercase;
-        opacity: 0;
-      }
-      figure.workeffect p {
-        font-size: 0.8em;
-        font-weight: 300;
-        letter-spacing: 1px;
-        opacity: 0;
-        top: 50%;
-        -webkit-transform: translateY(40px);
-        transform: translateY(40px);
-      }
-      figure.workeffect i {
-        position: absolute;
-        bottom: 10px;
-        right: 10px;
-        padding: 20px 25px;
-        font-size: 34px;
-        opacity: 0;
-        -webkit-transform: translateX(-10px);
-        transform: translateX(-10px);
-      }
-      figure.workeffect a {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 1;
-      }
-      figure.workeffect:hover img,
-      figure.workeffect.hover img {
-        zoom: 1;
-        filter: alpha(opacity=50);
-        -webkit-opacity: 0.5;
-        opacity: 0.5;
-      }
-      figure.workeffect:hover:after,
-      figure.workeffect.hover:after {
-        opacity: 1;
-        position: absolute;
-        top: 10px;
-        bottom: 10px;
-        left: 10px;
-        right: 10px;
-      }
-      figure.workeffect:hover h3,
-      figure.workeffect.hover h3,
-      figure.workeffect:hover p,
-      figure.workeffect.hover p,
-      figure.workeffect:hover i,
-      figure.workeffect.hover i {
-        -webkit-transform: translate(0px, 0px);
-        transform: translate(0px, 0px);
-        opacity: 1;
-      }
-</style>
     <!-- act0 : ALL / act1 : Android / act2 : VR&AR / act3 : Others -->
     <div class="container">
       <div class="row text-center">
@@ -373,8 +377,7 @@
             <h3>RunToYou</h3>
             <p>Azure FaceAPI를 활용한 얼굴인식 기반 미아찾기 프로그램</p><i class="ion-ios-arrow-right"></i>
           </figcaption>
-          <a class="portfolio-link" data-toggle="modal" href="#RunToYou"></a>
-        </figure>
+          <a class="portfolio-link" data-toggle="modal" href="#RunToYou"></a></figure>
         <!--RunToYou-->
         <figure class="workeffect act0 act1">
           <img src="img/portfolio/android/T_mydoctorA.jpg"/>
@@ -382,8 +385,7 @@
             <h3>MyDoctorA</h3>
             <p>UCSD Qualcomm Institute HealthCare IoT Project</p><i class="ion-ios-arrow-right"></i>
           </figcaption>
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2"></a>
-        </figure>
+          <a class="portfolio-link" data-toggle="modal" href="#MyDoctorA"></a></figure>
         <!--MyDoctorA-->
         <figure class="workeffect act0 act1">
           <img src="img/portfolio/android/T_beaconattend.jpg"/>
@@ -391,8 +393,7 @@
             <h3>가상비콘출석시스템</h3>
             <p>스마트폰을 활용한 BLE기반 출결시스템</p><i class="ion-ios-arrow-right"></i>
           </figcaption>
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3"></a>
-        </figure>
+          <a class="portfolio-link" data-toggle="modal" href="#BeaconAttend"></a></figure>
         <!--BeaconAttend-->
         <figure class="workeffect act0 act1">
           <img src="img/portfolio/android/T_beaconattend.jpg"/>
@@ -433,21 +434,21 @@
               <div class="container">
                 <button class="btn btn-primary text-center" style="color:black;width:50%;padding:7px" onmousedown="$('.slider-for').slick('setPosition'), $('.slider-nav').slick('setPosition')">이미지가 보이지 않을 경우 클릭하세요</button>
                 <div class="slick-active slider-for">
-                  <img style="padding:5px" src="img/portfolio/android/run/1.jpg"/>
-                  <img style="padding:5px" src="img/portfolio/android/run/2.jpg"/>
-                  <img style="padding:5px" src="img/portfolio/android/run/3.jpg"/>
-                  <img style="padding:5px" src="img/portfolio/android/run/4.jpg"/>
-                  <img style="padding:5px" src="img/portfolio/android/run/5.jpg"/>
-                  <img style="padding:5px" src="img/portfolio/android/run/6.jpg"/>
-                  <img style="padding:5px" src="img/portfolio/android/run/7.jpg"/>
-                  <img style="padding:5px" src="img/portfolio/android/run/8.jpg"/>
-                  <img style="padding:5px" src="img/portfolio/android/run/9.jpg"/>
-                  <img style="padding:5px" src="img/portfolio/android/run/10.jpg"/>
-                  <img style="padding:5px" src="img/portfolio/android/run/11.jpg"/>
-                  <img style="padding:5px" src="img/portfolio/android/run/12.jpg"/>
-                  <img style="padding:5px" src="img/portfolio/android/run/13.jpg"/>
-                  <img style="padding:5px" src="img/portfolio/android/run/14.jpg"/>
-                  <img style="padding:5px" src="img/portfolio/android/run/15.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/run/1.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/run/2.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/run/3.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/run/4.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/run/5.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/run/6.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/run/7.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/run/8.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/run/9.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/run/10.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/run/11.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/run/12.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/run/13.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/run/14.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/run/15.jpg"/>
                 </div>
                 <div class="slick-active slider-nav">
                   <img src="img/portfolio/android/run/1.jpg"/>
@@ -466,25 +467,200 @@
                   <img src="img/portfolio/android/run/14.jpg"/>
                   <img src="img/portfolio/android/run/15.jpg"/>
                 </div>
-                </div>
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
-                  cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Threads</li>
-                  <li>Category: Illustration</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-    				            <i class="fas fa-times"></i>
-    				            Close Project</button>
               </div>
+              <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
+                cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+              <ul class="list-inline">
+                <li>Date: January 2017</li>
+                <li>Client: Threads</li>
+                <li>Category: Illustration</li>
+              </ul>
+              <button class="btn btn-primary" data-dismiss="modal" type="button">
+		            <i class="fas fa-times"></i>Close Project</button>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-                                                  <!--  ArduinoPiano Converage SW Education  -->
+</div>
+
+<div class="portfolio-modal modal" id="MyDoctorA" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content ">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="modal-body">
+              <!-- Project Details Go Here -->
+              <h2 class="text-uppercase">Project Name</h2>
+              <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+              <div class="container">
+                <button class="btn btn-primary text-center" style="color:black;width:50%;padding:7px" onmousedown="$('.slider-for').slick('setPosition'), $('.slider-nav').slick('setPosition')">이미지가 보이지 않을 경우 클릭하세요</button>
+                <div class="slick-active slider-for">
+                  <img class="bigimg" src="img/portfolio/android/mydoctora/1.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/mydoctora/2.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/mydoctora/3.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/mydoctora/4.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/mydoctora/5.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/mydoctora/6.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/mydoctora/7.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/mydoctora/8.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/mydoctora/9.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/mydoctora/10.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/mydoctora/11.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/mydoctora/12.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/mydoctora/13.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/mydoctora/14.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/mydoctora/15.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/mydoctora/16.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/mydoctora/17.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/mydoctora/18.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/mydoctora/19.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/mydoctora/20.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/mydoctora/21.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/mydoctora/22.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/mydoctora/23.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/mydoctora/25.jpg"/>
+                </div>
+                <div class="slick-active slider-nav">
+                  <img src="img/portfolio/android/mydoctora/1.jpg"/>
+                  <img src="img/portfolio/android/mydoctora/2.jpg"/>
+                  <img src="img/portfolio/android/mydoctora/3.jpg"/>
+                  <img src="img/portfolio/android/mydoctora/4.jpg"/>
+                  <img src="img/portfolio/android/mydoctora/5.jpg"/>
+                  <img src="img/portfolio/android/mydoctora/6.jpg"/>
+                  <img src="img/portfolio/android/mydoctora/7.jpg"/>
+                  <img src="img/portfolio/android/mydoctora/8.jpg"/>
+                  <img src="img/portfolio/android/mydoctora/9.jpg"/>
+                  <img src="img/portfolio/android/mydoctora/10.jpg"/>
+                  <img src="img/portfolio/android/mydoctora/11.jpg"/>
+                  <img src="img/portfolio/android/mydoctora/12.jpg"/>
+                  <img src="img/portfolio/android/mydoctora/13.jpg"/>
+                  <img src="img/portfolio/android/mydoctora/14.jpg"/>
+                  <img src="img/portfolio/android/mydoctora/15.jpg"/>
+                  <img src="img/portfolio/android/mydoctora/16.jpg"/>
+                  <img src="img/portfolio/android/mydoctora/17.jpg"/>
+                  <img src="img/portfolio/android/mydoctora/18.jpg"/>
+                  <img src="img/portfolio/android/mydoctora/19.jpg"/>
+                  <img src="img/portfolio/android/mydoctora/20.jpg"/>
+                  <img src="img/portfolio/android/mydoctora/21.jpg"/>
+                  <img src="img/portfolio/android/mydoctora/22.jpg"/>
+                  <img src="img/portfolio/android/mydoctora/23.jpg"/>
+                  <img src="img/portfolio/android/mydoctora/25.jpg"/>
+                </div>
+              </div>
+              <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
+                cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+              <ul class="list-inline">
+                <li>Date: January 2017</li>
+                <li>Client: Threads</li>
+                <li>Category: Illustration</li>
+              </ul>
+              <button class="btn btn-primary" data-dismiss="modal" type="button">
+		            <i class="fas fa-times"></i>Close Project</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="portfolio-modal modal" id="BeaconAttend" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content ">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="modal-body">
+              <!-- Project Details Go Here -->
+              <h2 class="text-uppercase">Project Name</h2>
+              <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+              <div class="container">
+                <button class="btn btn-primary text-center" style="color:black;width:50%;padding:7px" onmousedown="$('.slider-for').slick('setPosition'), $('.slider-nav').slick('setPosition')">이미지가 보이지 않을 경우 클릭하세요</button>
+                <div class="slick-active slider-for">
+                  <img class="bigimg" src="img/portfolio/android/beaconattend/1.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/beaconattend/2.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/beaconattend/3.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/beaconattend/4.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/beaconattend/5.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/beaconattend/6.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/beaconattend/7.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/beaconattend/8.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/beaconattend/9.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/beaconattend/10.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/beaconattend/11.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/beaconattend/12.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/beaconattend/13.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/beaconattend/14.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/beaconattend/15.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/beaconattend/16.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/beaconattend/17.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/beaconattend/18.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/beaconattend/19.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/beaconattend/20.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/beaconattend/21.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/beaconattend/22.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/beaconattend/23.jpg"/>
+                  <img class="bigimg" src="img/portfolio/android/beaconattend/25.jpg"/>
+                </div>
+                <div class="slick-active slider-nav">
+                  <img src="img/portfolio/android/beaconattend/1.jpg"/>
+                  <img src="img/portfolio/android/beaconattend/2.jpg"/>
+                  <img src="img/portfolio/android/beaconattend/3.jpg"/>
+                  <img src="img/portfolio/android/beaconattend/4.jpg"/>
+                  <img src="img/portfolio/android/beaconattend/5.jpg"/>
+                  <img src="img/portfolio/android/beaconattend/6.jpg"/>
+                  <img src="img/portfolio/android/beaconattend/7.jpg"/>
+                  <img src="img/portfolio/android/beaconattend/8.jpg"/>
+                  <img src="img/portfolio/android/beaconattend/9.jpg"/>
+                  <img src="img/portfolio/android/beaconattend/10.jpg"/>
+                  <img src="img/portfolio/android/beaconattend/11.jpg"/>
+                  <img src="img/portfolio/android/beaconattend/12.jpg"/>
+                  <img src="img/portfolio/android/beaconattend/13.jpg"/>
+                  <img src="img/portfolio/android/beaconattend/14.jpg"/>
+                  <img src="img/portfolio/android/beaconattend/15.jpg"/>
+                  <img src="img/portfolio/android/beaconattend/16.jpg"/>
+                  <img src="img/portfolio/android/beaconattend/17.jpg"/>
+                  <img src="img/portfolio/android/beaconattend/18.jpg"/>
+                  <img src="img/portfolio/android/beaconattend/19.jpg"/>
+                  <img src="img/portfolio/android/beaconattend/20.jpg"/>
+                  <img src="img/portfolio/android/beaconattend/21.jpg"/>
+                  <img src="img/portfolio/android/beaconattend/22.jpg"/>
+                  <img src="img/portfolio/android/beaconattend/23.jpg"/>
+                  <img src="img/portfolio/android/beaconattend/25.jpg"/>
+                </div>
+              </div>
+              <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
+                cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+              <ul class="list-inline">
+                <li>Date: January 2017</li>
+                <li>Client: Threads</li>
+                <li>Category: Illustration</li>
+              </ul>
+              <button class="btn btn-primary" data-dismiss="modal" type="button">
+		            <i class="fas fa-times"></i>Close Project</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--  ArduinoPiano Converage SW Education  -->
 
 
 
@@ -631,6 +807,7 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
+
 
 <script type="text/javascript">
   $(document).ready(function() {
